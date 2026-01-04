@@ -140,25 +140,25 @@ This statement selects the specific columns (from the column list) from the tabl
 
 #### SQL `SELECT` Statement Examples
 
-- Select all columns from a `games` table:
+- Select all columns from a `godot_projects` table:
 
 ```sql
 SELECT * 
-FROM games;
+FROM godot_projects;
 ```
 
-- Select specific columns from a `games` table:
+- Select specific columns from a `godot_projects` table:
 
 ```sql
-SELECT game_id, title, release_date
-FROM games;
+SELECT project_id, title, release_date
+FROM godot_projects;
 ```
 
-- Select all columns from a `games` table where the `release_date` is after 2020:
+- Select all columns from a `godot_projects` table where the `release_date` is after 2020:
 
 ```sql
 SELECT *
-FROM games
+FROM godot_projects
 WHERE release_date > '2020-01-01';
 ```
 
@@ -368,7 +368,7 @@ Explain the difference between the `WHERE` and `HAVING` clauses in SQL.
 
 ### Question 11
 
-Michael has created a table called `games` with the following columns: `game_id`, `title`, `release_date`, and `genre`. He has set the data type of title, release_date and genre to `VARCHAR(400)`. After testing, he is confident that the database will function correctly. Why might Michael still want to reconsider the design of his database? Give two reasons.
+Michael has created a table called `godot_projects` with the following columns: `project_id`, `title`, `release_date`, and `genre`. He has set the data type of title, release_date and genre to `VARCHAR(400)`. After testing, he is confident that the database will function correctly. Why might Michael still want to reconsider the design of his database? Give two reasons.
 
 ### Question 12
 
